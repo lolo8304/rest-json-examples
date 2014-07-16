@@ -1,0 +1,73 @@
+{
+	"tests": [
+		{
+			"name": "users/x7y8z9",
+			"URL": "users/x7y8z9",
+			"description": "shows a simple single instance",
+			"expanded": "false",
+			"links": "false",
+			"odata": "false",
+			"source": "steffen"
+		},
+
+		{
+			"name": "users/x7y8z9a",
+			"URL": "users/x7y8z9a",
+			"description": "shows a simple single instance - IDs as links",
+			"expanded": "false",
+			"links": "false",
+			"odata": "false",
+			"source": "steffen"
+		},
+
+		{
+			"name": "users/x7y8z9a-expand",
+			"URL": "users/x7y8z9?$expand=vouchers,login",
+			"description": "shows a simple single instance - expanded vouchers, login",
+			"expanded": "true",
+			"links": "true",
+			"odata": "true[$expand]",
+			"source": "steffen"
+		},
+
+		{
+			"name": "users/x7y8z9a-metadata",
+			"URL": "users/x7y8z9a-metadata",
+			"description": "shows a simple single instance - metadata",
+			"expanded": "true",
+			"links": "true",
+			"odata": "true[$expand]",
+			"source": "steffen"
+		},
+
+		{
+			"name": "users/x7y8z9href",
+			"URL": "users/x7y8z9href",
+			"description": "shows a simple single instance - href as link property, collections as 1 link",
+			"expanded": "false",
+			"links": "true",
+			"odata": "false",
+			"source": "video"
+		},
+
+		{
+			"name": "users/x7y8z9href",
+			"URL": "users/x7y8z9href",
+			"description": "shows a simple single instance - expanded vouchers, login",
+			"expanded": "false",
+			"links": "true",
+			"odata": "false",
+			"source": "video"
+		},
+
+		{
+			"name": "users/x7y8z9href-expand",
+			"URL": "users/x7y8z9href-expand?$expand=vouchers,login",
+			"description": "shows a simple single instance - href as link property, collections as 1 link",
+			"expanded": "true",
+			"links": "true",
+			"odata": "true[$expand]",
+			"source": "video"
+		}
+	]
+}

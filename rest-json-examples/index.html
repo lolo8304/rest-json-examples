@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://www.jsviews.com/download/jsviews.js"></script>
+</head>
+<body>
+	<script id="tests-list-entry-template" type="text/x-jsrender">
+		<td><a target="_blank" href="json/{{:name}}.json">{{:URL}}</a></td>
+		<td>{{:source}}</td>
+		<td>{{>description}}</td>
+		<td>{{:odata}}</td>
+		<td>{{:expanded}}</td>
+		<td>{{:links}}</td>
+	</script>
+
+	<script id="tests-list-templates" type="text/x-jsrender">
+	<table border="1" cellpadding="10">
+		<tr>
+			<th>name</a></th>
+			<th>source</th>
+			<th width="50%" >description</th>
+			<th>odata?</th>
+			<th>expanded?</th>
+			<th>links?</th>
+		</tr>
+	<tbody>
+		{{for tests}}
+		<tr>
+			{{include tmpl="#tests-list-entry-template"/}}
+		</tr>
+		{{/for}}
+	</tbody></table>
+	</script>
+
+	<h1>simple URL for single instance</h1>
+	<div id="tests"></div>
+	<script type="text/javascript">
+		$.getJSON("./json/tests.json", function(data) {
+			$('#tests').html($('#tests-list-templates').render(data));
+		});
+
+	</script>
+
+
+</body>
+</html>

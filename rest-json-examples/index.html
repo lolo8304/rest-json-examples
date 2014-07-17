@@ -1,13 +1,22 @@
 <!doctype html>
 <html>
+<!-- 
+	using chrome:
+		error saying: Received an invalid response. Origin 'null' is therefore not allowed access.
+		-please use a webserver to point to this directory or read
+		-read http://chrisbitting.com/2014/03/04/allow-local-file-access-in-chrome-windows/ 
+ -->
 <head>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="http://www.jsviews.com/download/jsviews.js"></script>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/rainbow.min.css">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js"></script>
 </head>
 <body>
+	<script>hljs.initHighlightingOnLoad();</script>
 	<script id="tests-list-entry-template" type="text/x-jsrender">
 		<td>{{:source}}</td>
-		<td><a target="_blank" href="json/{{:name}}.json">{{:URL}}</a></td>
+		<td><button onclick="showCode('json/{{:name}}.json', '{{:URL}}', 1)">1</button>&nbsp;<button onclick="showCode('json/{{:name}}.json', '{{:URL}}', 2)">2</button>&nbsp;<a target="_blank" href="json/{{:name}}.json">{{:URL}}</a></td>
 		<td>{{>description}}</td>
 		<td>{{:expanded}}</td>
 	</script>
@@ -29,12 +38,30 @@
 	</tbody></table>
 	</script>
 
-	<h1>simple URL for single instance</h1>
+	<h1>Compare different solutions JSON REST for expanding, paging</h1>
+	<div>if ERROR on Chrome: Received an invalid response. Origin 'null' is therefore not allowed access</div>
+	<div>start webserver or start Chrome with --allow-file-access-from-files </div>
 	<div id="tests"></div>
+<div style="width:100%">
+	<table><tr  ><td width="50%" valign="top" ><div id="title-1"></div>
+	<pre><code id="code-1" class="json"></code></pre>
+	</td><td width="50%" valign="top"><div id="title-2"></div>
+	<pre><code id="code-2" class="json"></code></pre>
+	</td></tr></table>
+</div>
+
 	<script type="text/javascript">
 		$.getJSON("./json/tests.json", function(data) {
 			$('#tests').html($('#tests-list-templates').render(data));
 		});
+
+		function showCode(url, tit, nr) {
+			$('#title-'+nr).html(tit);
+			$.getJSON("./"+url, function(data) {
+				var t = JSON.stringify(data, null, 2);
+				$('#code-'+nr).html(t);
+			});
+		}
 
 	</script>
 

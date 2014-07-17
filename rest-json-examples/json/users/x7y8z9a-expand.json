@@ -1,6 +1,6 @@
 {
 	"user": {
-		"id": "https://api.axa.ch/accounts/x7y8z9",
+		"id": "http://localhost:8000/users/x7y8z9",
 		"name": "John Doe",
 		"code": "blablacode",
 		"phoneNumber": "+41791234567",
@@ -10,7 +10,7 @@
 		"vouchers": {
 			"vouchers": [
 				{
-					"id": "https://api.axa.ch/vouchers/k3l4m5",
+					"id": "http://localhost:8000/vouchers/k3l4m5",
 					"vehiclePlate": "ZH12345",
 					"vehicleBrand": "Audi",
 					"vehicleModel": "R8",
@@ -21,7 +21,7 @@
 				},
 
 				{
-					"id": "https://api.axa.ch/vouchers/l4m5n6",
+					"id": "http://localhost:8000/vouchers/l4m5n6",
 					"vehiclePlate": "ZH45678",
 					"vehicleBrand": "Nissan",
 					"vehicleModel": "Sunny",
@@ -34,7 +34,7 @@
 		},
 
 		"login": {
-			"id": "https://api.axa.ch/login/e8f9g0",
+			"id": "http://localhost:8000/login/e8f9g0",
 			"userName": "john@example.com",
 			"passwordReminder": "My 3rd ex-girlfriend's cat's favourite toy brand"
 		}

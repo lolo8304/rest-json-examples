@@ -1,0 +1,66 @@
+{
+	"d": {
+		"results": [
+			{
+				"__metadata": {
+					"uri": "http://localhost:8000/odata.svc/users('x7y8z9')",
+					"type": "User"
+				},
+
+				"id": "x7y8z9",
+				"name": "John Doe",
+				"code": "blablacode",
+				"phoneNumber": "+41791234567",
+				"email": "john@example.com",
+				"defaultLanguage": "de-CH",
+				"address": "Somewhere",
+				"vouchers": {
+					"results": [
+						{
+							"__metadata": {
+								"uri": "http://localhost:8000/odata.svc/vouchers('k3l4m5')",
+								"type": "Voucher"
+							},
+
+							"id": "k3l4m5",
+							"vehiclePlate": "ZH12345",
+							"vehicleBrand": "Audi",
+							"vehicleModel": "R8",
+							"vehicleId": "a1b2c3d4e5",
+							"driverName": "John Doe",
+							"driverEmail": "john@example.com",
+							"driverPhone": "+41791234567"
+						},
+
+						{
+							"__metadata": {
+								"uri": "http://localhost:8000/odata.svc/vouchers('l4m5n6')",
+								"type": "Voucher"
+							},
+
+							"id": "l4m5n6",
+							"vehiclePlate": "ZH45678",
+							"vehicleBrand": "Nissan",
+							"vehicleModel": "Sunny",
+							"vehicleId": "g3h4i5j6k7",
+							"driverName": "Klara Doe",
+							"driverEmail": "klara@example.com",
+							"driverPhone": "+41797654321"
+						}
+					]
+				},
+
+				"login": {
+					"__metadata": {
+						"uri": "http://localhost:8000/odata.svc/login('e8f9g0')",
+						"type": "Login"
+					},
+
+					"id": "e8f9g0",
+					"userName": "john@example.com",
+					"passwordReminder": "My 3rd ex-girlfriend's cat's favourite toy brand"
+				}
+			}
+		]
+	}
+}

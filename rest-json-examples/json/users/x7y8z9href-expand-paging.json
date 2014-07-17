@@ -9,6 +9,15 @@
 	"address": "Somewhere",
 	"vouchers": {
 		"_href": "http://localhost:8000/users/x7y8z9/vouchers",
+		"_first": null,
+		"_previous": null,
+		"_current": "http://localhost:8000/users/x7y8z9/vouchers?$limit=2",
+		"_next": "http://localhost:8000/users/x7y8z9/vouchers?$limit=2&offset=2",
+		"_last": "http://localhost:8000/users/x7y8z9/vouchers?$limit=2&offset=1232",
+		"_limit": 2,
+		"_offset": 0,
+		"_totalPages": 617,
+		"_totalCount": 1234,
 		"items": [
 			{
 				"_href": "http://localhost:8000/vouchers/k3l4m5",

@@ -6,23 +6,19 @@
 </head>
 <body>
 	<script id="tests-list-entry-template" type="text/x-jsrender">
-		<td><a target="_blank" href="json/{{:name}}.json">{{:URL}}</a></td>
 		<td>{{:source}}</td>
+		<td><a target="_blank" href="json/{{:name}}.json">{{:URL}}</a></td>
 		<td>{{>description}}</td>
-		<td>{{:odata}}</td>
 		<td>{{:expanded}}</td>
-		<td>{{:links}}</td>
 	</script>
 
 	<script id="tests-list-templates" type="text/x-jsrender">
 	<table border="1" cellpadding="10">
 		<tr>
-			<th>name</a></th>
 			<th>source</th>
+			<th>name</a></th>
 			<th width="50%" >description</th>
-			<th>odata?</th>
 			<th>expanded?</th>
-			<th>links?</th>
 		</tr>
 	<tbody>
 		{{for tests}}

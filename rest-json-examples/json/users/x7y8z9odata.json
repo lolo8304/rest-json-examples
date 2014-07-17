@@ -1,0 +1,31 @@
+{
+	"d": {
+		"results": [
+			{
+				"__metadata": {
+					"uri": "http://localhost:8000/users('x7y8z9')",
+					"type": "User"
+				},
+
+				"id": "x7y8z9",
+				"name": "John Doe",
+				"code": "blablacode",
+				"phoneNumber": "+41791234567",
+				"email": "john@example.com",
+				"defaultLanguage": "de-CH",
+				"address": "Somewhere",
+				"vouchers": {
+					"__deferred": {
+						"uri": "http://localhost:8000/users('x7y8z9')/vouchers"
+					}
+				},
+
+				"login": {
+					"__deferred": {
+						"uri": "http://localhost:8000/login('e8f9g0')"
+					}
+				}
+			}
+		]
+	}
+}

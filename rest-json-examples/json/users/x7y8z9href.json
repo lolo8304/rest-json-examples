@@ -1,6 +1,6 @@
 {
-	"_href": "https://api.axa.ch/accounts/x7y8z9href",
-	"id": "x7y8z9href",
+	"_href": "http://localhost:8000/users/x7y8z9",
+	"id": "x7y8z9",
 	"name": "John Doe",
 	"code": "blablacode",
 	"phoneNumber": "+41791234567",
@@ -8,7 +8,7 @@
 	"defaultLanguage": "de-CH",
 	"address": "Somewhere",
 	"vouchers": {
-		"_href": "https:/localhost:8000/users/x7y8z9href/vouchers"
+		"_href": "https:/localhost:8000/users/x7y8z9/vouchers"
 	},
 
 	"login": {

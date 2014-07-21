@@ -1,0 +1,33 @@
+{
+	"d": {
+		"results": [
+			{
+				"__metadata": {
+					"uri": "http://inventory42-focusdays14.rhcloud.com/odata.svc/Person('lolo8304@gmail.com')",
+					"type": "InventoryModel.Person"
+				},
+
+				"personID": "lolo8304@gmail.com",
+				"totalPriceInventories": "122.00",
+				"personName": "Lorenz Hänggi",
+				"devices": {
+					"__deferred": {
+						"uri": "http://inventory42-focusdays14.rhcloud.com/odata.svc/Person('lolo8304@gmail.com')/devices"
+					}
+				},
+
+				"locations": {
+					"__deferred": {
+						"uri": "http://inventory42-focusdays14.rhcloud.com/odata.svc/Person('lolo8304@gmail.com')/locations"
+					}
+				},
+
+				"inventories": {
+					"__deferred": {
+						"uri": "http://inventory42-focusdays14.rhcloud.com/odata.svc/Person('lolo8304@gmail.com')/inventories"
+					}
+				}
+			}
+		]
+	}
+}

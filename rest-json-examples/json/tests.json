@@ -19,6 +19,15 @@
 		},
 
 		{
+			"name": "users/odata-filtered-by-personName-personID",
+			"URL": "odata.svc/users(&apos;x7y8z9a&apos;)?$filter=personName eq 'Lorenz Hänggi' and personID eq 'lolo8304@gmail.com'",
+			"description": "shows a simple single instance with ODATA - filtered by 2 arguments",
+			"expanded": true,
+			"paging": false,
+			"source": "odata"
+		},
+
+		{
 			"name": "users/x7y8z9a-steffen",
 			"URL": "users/x7y8z9",
 			"description": "shows a simple single instance - vouchers, login",

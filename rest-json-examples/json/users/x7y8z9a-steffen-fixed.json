@@ -1,0 +1,18 @@
+{
+	"user": {
+		"id": "http://localhost:8000/users/x7y8z9",
+		"name": "John Doe",
+		"code": "blablacode",
+		"phoneNumber": "+41791234567",
+		"email": "john@example.com",
+		"defaultLanguage": "de-CH",
+		"address": "Somewhere",
+		"vouchers": {
+			"id": "http://localhost:8000/users/x7y8z9/vouchers"
+		},
+
+		"login": {
+			"id": "http://localhost:8000/login/e8f9g0"
+		}
+	}
+}

@@ -10,7 +10,7 @@
 			}
 		},
 
-		"id": "http://localhost:8000/accounts/x7y8z9",
+		"id": "http://localhost:8000/users/x7y8z9",
 		"name": "John Doe",
 		"code": "blablacode",
 		"phoneNumber": "+41791234567",

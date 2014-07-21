@@ -2,42 +2,65 @@
 	"tests": [
 		{
 			"name": "users/x7y8z9odata",
-			"URL": "odata.svc/users('x7y8z9a')",
+			"URL": "odata.svc/users(&apos;x7y8z9a&apos;)",
 			"description": "shows a simple single instance with ODATA",
 			"expanded": false,
+			"paging": false,
 			"source": "odata"
 		},
 
 		{
 			"name": "users/x7y8z9odata-expand",
-			"URL": "odata.svc/users('x7y8z9a')?$expand=vouchers,login",
+			"URL": "odata.svc/users(&apos;x7y8z9a&apos;)?$expand=vouchers,login",
 			"description": "shows a simple single instance with ODATA - expanded vouchers, login",
 			"expanded": true,
+			"paging": false,
 			"source": "odata"
 		},
 
 		{
-			"name": "users/x7y8z9a",
+			"name": "users/x7y8z9a-steffen",
 			"URL": "users/x7y8z9",
 			"description": "shows a simple single instance - vouchers, login",
 			"expanded": false,
-			"source": "steffen"
+			"paging": false,
+			"source": "steffen_"
 		},
 
 		{
-			"name": "users/x7y8z9a-expand",
+			"name": "users/x7y8z9a-steffen-expand",
 			"URL": "users/x7y8z9?$expand=vouchers,login",
 			"description": "shows a simple single instance - expanded vouchers, login",
 			"expanded": true,
-			"source": "steffen"
+			"paging": false,
+			"source": "steffen_"
 		},
 
 		{
-			"name": "users/x7y8z9a-metadata",
+			"name": "users/x7y8z9a-steffen-fixed",
+			"URL": "users/x7y8z9",
+			"description": "shows a simple single instance - vouchers, login",
+			"expanded": false,
+			"paging": false,
+			"source": "steffen-fixed"
+		},
+
+		{
+			"name": "users/x7y8z9a-steffen-fixed-expand",
+			"URL": "users/x7y8z9?$expand=vouchers,login",
+			"description": "shows a simple single instance - expanded vouchers, login",
+			"expanded": true,
+			"paging": false,
+			"source": "steffen-fixed"
+		},
+
+		{
+			"name": "users/x7y8z9a-steffen-metadata",
 			"URL": "users/x7y8z9?$expand=vouchers,login&pageSize=2&offset=0",
 			"description": "shows a simple single instance - extended, metadata single and collections",
 			"expanded": true,
-			"source": "steffen"
+			"paging": true,
+			"source": "steffen_"
 		},
 
 		{
@@ -45,6 +68,7 @@
 			"URL": "users/x7y8z9",
 			"description": "shows a simple single instance - href as link property, collections as 1 link",
 			"expanded": false,
+			"paging": false,
 			"source": "video"
 		},
 
@@ -53,6 +77,7 @@
 			"URL": "users/x7y8z9?$expand=vouchers,login",
 			"description": "shows a simple single instance - href as link property, expanded vouchers, login",
 			"expanded": true,
+			"paging": false,
 			"source": "video"
 		},
 
@@ -61,6 +86,7 @@
 			"URL": "users/x7y8z9?$expand=vouchers,login&$offset=0&$limit=2",
 			"description": "shows a simple single instance - href as link property, expanded vouchers, login - pagin",
 			"expanded": true,
+			"paging": true,
 			"source": "video"
 		}
 	]

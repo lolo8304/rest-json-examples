@@ -1,0 +1,43 @@
+{
+	"user": {
+		"id": "http://localhost:8000/users/x7y8z9",
+		"name": "John Doe",
+		"code": "blablacode",
+		"phoneNumber": "+41791234567",
+		"email": "john@example.com",
+		"defaultLanguage": "de-CH",
+		"address": "Somewhere",
+		"vouchers": {
+			"id": "http://localhost:8000/users/x7y8z9/vouchers",
+			"vouchers": [
+				{
+					"id": "http://localhost:8000/vouchers/k3l4m5",
+					"vehiclePlate": "ZH12345",
+					"vehicleBrand": "Audi",
+					"vehicleModel": "R8",
+					"vehicleId": "a1b2c3d4e5",
+					"driverName": "John Doe",
+					"driverEmail": "john@example.com",
+					"driverPhone": "+41791234567"
+				},
+
+				{
+					"id": "http://localhost:8000/vouchers/l4m5n6",
+					"vehiclePlate": "ZH45678",
+					"vehicleBrand": "Nissan",
+					"vehicleModel": "Sunny",
+					"vehicleId": "g3h4i5j6k7",
+					"driverName": "Klara Doe",
+					"driverEmail": "klara@example.com",
+					"driverPhone": "+41797654321"
+				}
+			]
+		},
+
+		"login": {
+			"id": "http://localhost:8000/login/e8f9g0",
+			"userName": "john@example.com",
+			"passwordReminder": "My 3rd ex-girlfriend's cat's favourite toy brand"
+		}
+	}
+}

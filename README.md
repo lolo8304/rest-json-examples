@@ -21,6 +21,7 @@ we base our standards on the following resources
 - http://www.odata.org/documentation/odata-version-4-0/
 - http://martinfowler.com/articles/richardsonMaturityModel.html
 - https://www.youtube.com/watch?v=mZ8_QgJ5mbs
+- http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api
 
 want to see the API used within some javascript examples tp proof
 - the simplicity

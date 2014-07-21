@@ -16,6 +16,9 @@ including
 - security
 - define http.headers and URLs
 
+test examples on
+- http://tiny.cc/rest-test
+
 we base our standards on the following resources
 - http://www.restapitutorial.com/
 - http://www.odata.org/documentation/odata-version-4-0/

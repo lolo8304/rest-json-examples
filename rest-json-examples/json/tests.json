@@ -88,6 +88,24 @@
 			"expanded": true,
 			"paging": true,
 			"source": "video"
+		},
+
+		{
+			"name": "users/user-bestpractice",
+			"URL": "users",
+			"description": "shows a list of users - no paging",
+			"expanded": true,
+			"paging": true,
+			"source": "best-practice"
+		},
+
+		{
+			"name": "users/user-bestpractice-paging",
+			"URL": "users?offset=0&limit=3",
+			"description": "shows a list of users - paging",
+			"expanded": false,
+			"paging": true,
+			"source": "best-practice"
 		}
 	]
 }
